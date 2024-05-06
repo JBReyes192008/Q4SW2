@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Seatwork 2</title>
+	<style>
+		body { background-color: #FCCAAC;
+
+           }
+       </style>
+</head>
+<body>
+
+	<form class="form-group">
+		<label id="num1">enter the first digit</label>
+		<input id="input1" type="number" class="form-control" placeholder="Enter here">
+		<label id="num2">enter the second digit</label>
+		<input id="input2" type="number" class="form-control" placeholder="Enter here">
+		<button id="button1" class="btn btn-info" onclick="add()">Add>
+		<button id="button1" class="btn btn-success" onclick="product()">Multiply>
+		<button id="button1" class="btn btn-danger" onclick="difference()">Subtract></button>
+	</button></button></form>
+
+
+	<script type="text/javascript"> function add(){
+		var num1 = document.getElementById("Input1").value;//assign value for num1
+		var num2 = document.getElementById("Input2").value;//assign value for num2
+		var sum = number(num1) + Number(num2);//formula for sum
+
+		window.alert("The sum of num1 and num2:" + sum);
+	}
+
+
+        function product(){
+		var num1 = document.getElementById("Input1").value;//assign value for num1
+		var num2 = document.getElementById("Input2").value;//assign value for num2
+		var product = number(num1) * Number(num2);//formula for product
+
+		window.alert("The product of num1 and num2:" + product);
+	}
+
+	function subtract(){
+		var num1 = document.getElementById("Input1").value;//assign value for num1
+		var num2 = document.getElementById("Input2").value;//assign value for num2
+		var difference = number(num1) * Number(num2);//formula for difference
+
+		window.alert("The difference of num1 and num2:" + difference);
+	}
+
+</script>
+</body>
+</html>
